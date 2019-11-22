@@ -5,12 +5,12 @@ public class HelloWorld
     {
         while (true) {
             Console.WriteLine("inserisci numero 1");
-            if (Double.TryParse(Console.ReadLine().Replace(".", ","), out double n1)) {
+            if (double.TryParse(Console.ReadLine().Replace(".", ","), out double n1)) {
                 string sel = "";
                 do
                 {
                     Console.WriteLine("Inserisci numero 2");
-                    if (Double.TryParse(Console.ReadLine().Replace(".", ","), out double n2))
+                    if (double.TryParse(Console.ReadLine().Replace(".", ","), out double n2))
                     {
                         Console.WriteLine("inserisci segno(+ , - , * , / )oppure 'c' per cancellare il secondo numero");
                         sel = Console.ReadLine().ToLower();
